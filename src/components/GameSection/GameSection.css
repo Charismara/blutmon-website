@@ -1,0 +1,33 @@
+.section{
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    
+}
+
+.col{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+@media(min-width: 1216px){
+    .col{
+        max-width: 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+}
