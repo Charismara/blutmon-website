@@ -13,7 +13,8 @@
     line-height: 1.5;
     color: white;
     text-align: left;
-    
+    columns: 1;
+    width: 100%;
 }
 
 .col{
@@ -22,12 +23,17 @@
     padding-right: 15px;
     box-sizing: border-box;
     display: block;
-
+    width: 100%;
 }
 
-@media(min-width: 1150px){
-    .col{
-        max-width: 33.333333%;
-        flex: 0 0 33.333333%;
+@media(min-width: 1131px){
+    .section{
+        columns: 3;
+    }
+}
+
+@media(min-width: 766px) and (max-width: 1130px){
+    .section{
+        columns: 2;
     }
 }
