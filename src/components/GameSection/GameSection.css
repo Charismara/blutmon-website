@@ -25,7 +25,7 @@
 
 }
 
-@media(min-width: 1216px){
+@media(min-width: 1150px){
     .col{
         max-width: 33.333333%;
         flex: 0 0 33.333333%;
