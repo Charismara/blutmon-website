@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/blutmond-website/static/css/main.80e7748f.chunk.css",
+    "main.js": "/blutmond-website/static/js/main.c7a3944a.chunk.js",
+    "main.js.map": "/blutmond-website/static/js/main.c7a3944a.chunk.js.map",
+    "runtime-main.js": "/blutmond-website/static/js/runtime-main.9cc53a86.js",
+    "runtime-main.js.map": "/blutmond-website/static/js/runtime-main.9cc53a86.js.map",
+    "static/js/2.06649645.chunk.js": "/blutmond-website/static/js/2.06649645.chunk.js",
+    "static/js/2.06649645.chunk.js.map": "/blutmond-website/static/js/2.06649645.chunk.js.map",
+    "index.html": "/blutmond-website/index.html",
+    "precache-manifest.22499e4a77b89851f0ce931f04025907.js": "/blutmond-website/precache-manifest.22499e4a77b89851f0ce931f04025907.js",
+    "service-worker.js": "/blutmond-website/service-worker.js",
+    "static/css/main.80e7748f.chunk.css.map": "/blutmond-website/static/css/main.80e7748f.chunk.css.map",
+    "static/js/2.06649645.chunk.js.LICENSE.txt": "/blutmond-website/static/js/2.06649645.chunk.js.LICENSE.txt",
+    "static/media/blutmond_icon_v2.png": "/blutmond-website/static/media/blutmond_icon_v2.9bbfaf43.png",
+    "static/media/discord_icon.png": "/blutmond-website/static/media/discord_icon.7a9c2f4b.png",
+    "static/media/gw2_icon.png": "/blutmond-website/static/media/gw2_icon.702205bd.png",
+    "static/media/gw2_icon_resized.png": "/blutmond-website/static/media/gw2_icon_resized.c51365f4.png",
+    "static/media/league_icon.png": "/blutmond-website/static/media/league_icon.059ada60.png",
+    "static/media/league_icon_resized.png": "/blutmond-website/static/media/league_icon_resized.afe77e95.png",
+    "static/media/mc_logo.webp": "/blutmond-website/static/media/mc_logo.d8ea5984.webp",
+    "static/media/overwatch_icon.svg": "/blutmond-website/static/media/overwatch_icon.1a528d9e.svg",
+    "static/media/steam_icon.png": "/blutmond-website/static/media/steam_icon.2ec14bd9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9cc53a86.js",
+    "static/js/2.06649645.chunk.js",
+    "static/css/main.80e7748f.chunk.css",
+    "static/js/main.c7a3944a.chunk.js"
+  ]
+}
