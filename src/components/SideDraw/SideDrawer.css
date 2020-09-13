@@ -16,6 +16,11 @@
     transform: translateX(0);
 }
 
+.side-drawer img{
+    max-width: 90%;
+    position: fixed;
+}
+
 .side-drawer ul{
     height: 100%;
     list-style: none;
@@ -39,7 +44,7 @@
     text-decoration: underline;
 }
 
-@media (min-width: 840px){
+@media (min-width: 740px){
     .side-drawer{
         display: none;
     }

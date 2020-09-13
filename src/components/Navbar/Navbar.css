@@ -5,6 +5,7 @@
     height: 56px;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 .navbar__logo a{
@@ -49,7 +50,7 @@
     flex: 1;
 }
 
-@media (max-width: 840px){
+@media (max-width: 740px){
     .navbar__navigation_items{
         display: none;
     }

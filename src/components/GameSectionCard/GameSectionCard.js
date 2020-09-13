@@ -3,7 +3,7 @@ import './GameSectionCard.css'
 
 const gameSectionCard = props => {
     let imgSrc = props.imgSrc;
-    let img = <img src={require('../../images/' + imgSrc)} />;
+    let img = <img src={require('../../images/' + imgSrc)} alt="image placeholder" />;
     let title = <h5>{props.title}</h5>;
     let line1 = <p>{props.line1}</p>;
     let line2 = <p>{props.line2}</p>;

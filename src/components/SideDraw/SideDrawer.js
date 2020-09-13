@@ -8,15 +8,15 @@ const sideDrawer = props => {
     }
 
     return <nav className={drawerClasses}>
+        <img src={require('../../images/blutmond_icon.webp')} alt="icon_placeholder"/>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="https://app.kosmi.io/room/956fp3">Watch as Clan</a></li>
             <li><a href="https://discord.gg/KSTSZsF">Discord</a></li>
-            <li><a href="/">Unsere Partnerangebote</a></li>
             <li><a href="/">Einloggen</a></li>
             <li><a href="/">Registrieren</a></li>
         </ul>
-    </nav>
+    </nav >
 };
 
 export default sideDrawer

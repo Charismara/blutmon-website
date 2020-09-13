@@ -15,7 +15,6 @@ const Navbar = props => (
                     <li><a href="/">Home</a></li>
                     <li><a href="https://app.kosmi.io/room/956fp3">Watch as Clan</a></li>
                     <li><a href="https://discord.gg/KSTSZsF">Discord</a></li>
-                    <li><a href="/">Unsere Partnerangebote</a></li>
                     <li><a href="/">Einloggen</a></li>
                     <li><a href="/">Registrieren</a></li>
                 </ul>
