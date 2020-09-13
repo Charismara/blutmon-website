@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/blutmond-website/precache-manifest.22499e4a77b89851f0ce931f04025907.js"
+  "/blutmond-website/precache-manifest.85e352938442652ea33a415cbac1bf26.js"
 );
 
 self.addEventListener('message', (event) => {
