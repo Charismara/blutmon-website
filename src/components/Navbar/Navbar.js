@@ -12,11 +12,10 @@ const Navbar = props => (
             <div className="spacer"></div>
             <div className="navbar__navigation_items">
                 <ul>
-                    <li><a href="/">Home</a></li>
                     <li><a href="https://app.kosmi.io/room/956fp3">Watch as Clan</a></li>
                     <li><a href="https://discord.gg/KSTSZsF">Discord</a></li>
-                    <li><a href="/">Einloggen</a></li>
-                    <li><a href="/">Registrieren</a></li>
+                    <li><button href="" onClick={props.loginClickHandler}>Einloggen</button></li>
+                    <li><button href="">Registrieren</button></li>
                 </ul>
             </div>
         </nav>

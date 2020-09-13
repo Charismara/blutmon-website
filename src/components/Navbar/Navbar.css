@@ -46,6 +46,21 @@
     padding: 0 0.5rem;
 }
 
+.navbar__navigation_items button{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar__navigation_items button:hover,.navbar__navigation_items button:active{
+    color: lightgray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .spacer{
     flex: 1;
 }

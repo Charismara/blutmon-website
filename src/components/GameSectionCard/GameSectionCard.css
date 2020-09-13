@@ -5,6 +5,10 @@
     margin-bottom: 1rem;
 }
 
+.cardHolder{
+    padding: 0px;
+}
+
 .card p{
     margin: 0px;
     padding: 0px;

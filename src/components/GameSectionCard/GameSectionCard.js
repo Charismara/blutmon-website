@@ -9,7 +9,7 @@ const gameSectionCard = props => {
     let line2 = <p>{props.line2}</p>;
     let line3 = <p>{props.line3}</p>;
 
-    return <li className="card">
+    return <ul className="cardHolder"><li className="card">
         {img}
         <div>
             {title}
@@ -17,7 +17,7 @@ const gameSectionCard = props => {
             {line2}
             {line3}
         </div>
-    </li>
+    </li></ul>
 }
 
 export default gameSectionCard;

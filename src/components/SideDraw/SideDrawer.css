@@ -44,6 +44,22 @@
     text-decoration: underline;
 }
 
+.side-drawer button{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: -0.4rem;
+}
+
+.side-drawer button:hover, .side-drawer button:active{
+    color: lightgray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (min-width: 740px){
     .side-drawer{
         display: none;
