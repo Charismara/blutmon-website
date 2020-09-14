@@ -247,7 +247,7 @@ svg {
   
 .submitButton:hover {
     transition: 1s ease-in-out;
-    background: #4F95DA;
+    background: #850000;
 }
   
 .submitButton:hover svg {
@@ -258,4 +258,32 @@ svg {
     color: white;
     font-size: 18px;
     font-weight: 100;
+}
+
+@media (max-width: 400px), (max-height: 865px){
+    .field{
+        margin: 3rem auto 1rem;
+    }
+
+    .submitButtonContainer{
+        margin: 3rem auto 1rem;
+    }
+    
+    .checkboxContainer{
+        margin: 3rem auto 1rem;
+    }
+}
+
+@media (max-width: 357px), (max-height: 780px){
+    .field{
+        margin: 1rem auto 1rem;
+    }
+
+    .submitButtonContainer{
+        margin: 1rem auto 1rem;
+    }
+
+    .checkboxContainer{
+        margin: 1rem auto 1rem;
+    }
 }
