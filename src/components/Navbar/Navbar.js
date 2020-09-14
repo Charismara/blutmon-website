@@ -15,7 +15,7 @@ const Navbar = props => (
                     <li><a href="https://app.kosmi.io/room/956fp3">Watch as Clan</a></li>
                     <li><a href="https://discord.gg/KSTSZsF">Discord</a></li>
                     <li><button href="" onClick={props.loginClickHandler}>Einloggen</button></li>
-                    <li><button href="">Registrieren</button></li>
+                    <li><button href="" onClick={props.registerClickHandler}>Registrieren</button></li>
                 </ul>
             </div>
         </nav>

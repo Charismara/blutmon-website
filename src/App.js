@@ -5,6 +5,7 @@ import SideDrawer from './components/SideDraw/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import GameSection from './components/GameSection/GameSection';
 import LogInForm from './components/LogInForm/LogInForm';
+import RegisterForm from './components/RegisterForm/RegisterForm';
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
   render() {
     let backdrop;
     let loginForm;
+    let registerForm;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHander} />;
@@ -48,14 +50,19 @@ class App extends Component {
       loginForm = <LogInForm show={this.state.logInOpen} closeHandler={this.logInHandler}/>
     }
 
+    if(this.state.registerOpen){
+      registerForm = <RegisterForm show={this.state.registerOpen} closeHandler={this.registerHandler}/>
+    }
+
     return (
       <div style={{ height: '100%' }}>
-        <Navbar drawerClickHandler={this.drawerToggleClickHandler} loginClickHandler={this.logInHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} loginClickHandler={this.logInHandler}/>
+        <Navbar drawerClickHandler={this.drawerToggleClickHandler} loginClickHandler={this.logInHandler} registerClickHandler={this.registerHandler}/>
+        <SideDrawer show={this.state.sideDrawerOpen} loginClickHandler={this.logInHandler} registerClickHandler={this.registerHandler}/>
         {backdrop}
         <main className="page-container">
           <GameSection />
           {loginForm}
+          {registerForm}
         </main>
       </div>
     );

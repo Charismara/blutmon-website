@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LogInForm.css'
 
-class logInForm extends Component {
+class LogInForm extends Component {
     constructor(props) {
         super();
         this.state = {
@@ -30,6 +30,14 @@ class logInForm extends Component {
         });
     }
 
+    handleSocialLogin = (user) => {
+        console.log(user);
+    }
+
+    handleSocialLoginFailure = (err) => {
+        console.log(err);
+    }
+
     render() {
         let containerClasses = "container";
 
@@ -51,22 +59,14 @@ class logInForm extends Component {
                         <input type="password" name="password" onChange={this.checkValidPassword}></input>
                         <label htmlFor="password" >Passwort</label>
                     </div>
-                    <div className="strength">
-                        <span className={this.state.passwordStrength >= 1 ? 'bar bar-1 bar-show' : 'bar bar-1'}></span>
-                        <span className={this.state.passwordStrength >= 2 ? 'bar bar-2 bar-show' : 'bar bar-2'}></span>
-                        <span className={this.state.passwordStrength >= 3 ? 'bar bar-3 bar-show' : 'bar bar-3'}></span>
-                        <span className={this.state.passwordStrength == 4 ? 'bar bar-4 bar-show' : 'bar bar-4'}></span>
+                    <div className="checkboxContainer">
+                        <input type="checkbox" id="stay"></input>
+                        <label htmlFor="stay">Eingeloggt bleiben</label>
                     </div>
-                    <ul>
-                        <li>{this.state.validation[0] ? '✔️' : '❌'} muss mindestens 8 Zeichen lang sein</li>
-                        <li>{this.state.validation[1] ? '✔️' : '❌'} muss mindestens 1 Großbuchstaben enthalten</li>
-                        <li>{this.state.validation[2] ? '✔️' : '❌'} muss mindestens 1 Kleinbuchstaben enthalten</li>
-                        <li>{this.state.validation[3] ? '✔️' : '❌'} muss mindestens 1 Zahl enthalten</li>
-                    </ul>
                 </form>
             </div>
         </div>
     }
 }
 
-export default logInForm;
+export default LogInForm;
