@@ -8,7 +8,9 @@ class RegisterForm extends Component {
             show: props.show,
             closeHandler: props.closeHandler,
             passwordStrength: 0,
-            validation: [false, false, false, false]
+            validation: [false, false, false, false],
+            userEmail: "",
+            userPassword: ""
         }
 
         this.checkValidPassword = this.checkValidPassword.bind(this);
@@ -28,6 +30,12 @@ class RegisterForm extends Component {
         this.setState({
             passwordStrength: this.state.validation.reduce((acc, cur) => acc + cur)
         });
+
+        if(this.state.passwordStrength===4){
+            e.target.setCustomValidity('');
+        } else {
+            e.target.setCustomValidity('Alle aufgeführten Kriterien müssen erfüllt sein.');
+        }
     }
 
     handleSocialLogin = (user) => {
@@ -36,6 +44,20 @@ class RegisterForm extends Component {
 
     handleSocialLoginFailure = (err) => {
         console.log(err);
+    }
+
+    handleRegister = (event) =>{
+        event.preventDefault();
+        var emailValidator = require("email-validator");
+
+        if(emailValidator.validate(event.target.email.value)){
+        
+        } else {
+            console.log("Email is Invalid");
+        }
+
+        
+        console.log(event.target.password.value);
     }
 
     render() {
@@ -50,13 +72,13 @@ class RegisterForm extends Component {
             <div className="form-container">
                 <h2>Registrieren</h2>
                 <button className="close-button" onClick={this.state.closeHandler}>X</button>
-                <form>
+                <form onSubmit={this.handleRegister}>
                     <div className="field">
-                        <input type="email" id="email"></input>
+                        <input type="email" id="email" name="email" required placeholder=""></input>
                         <label htmlFor="email">E-Mail</label>
                     </div>
                     <div className="field">
-                        <input type="password" id="password" onChange={this.checkValidPassword}></input>
+                        <input type="password" id="password" onChange={this.checkValidPassword} name="password" isvalid="false" required placeholder=""></input>
                         <label htmlFor="password" >Passwort</label>
                     </div>
                     <div className="strength">
@@ -80,7 +102,7 @@ class RegisterForm extends Component {
                         <label htmlFor="dsgvo">Ich stimme den <a href="blutmond-website/dsgvo.html" target="_blank" className="link">Nutzungsbedingungen</a> zu.</label>
                     </div>
                     <div className="submitButtonContainer">
-                        <button className="submitButton">
+                        <button className="submitButton" type="submit">
                             <svg width="180px" height="60px" viewBox="0 0 180 60" className="submitBorder">
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />

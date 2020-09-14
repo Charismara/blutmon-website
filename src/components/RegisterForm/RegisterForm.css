@@ -113,7 +113,6 @@
     transform: scale(0.8) translateY(-4rem);
 }
 
-
 .strength {
     display: flex;
     height: 20px;
@@ -286,4 +285,8 @@ svg {
     .checkboxContainer{
         margin: 1rem auto 1rem;
     }
+}
+
+.field input:not(:placeholder-shown) {
+    
 }
